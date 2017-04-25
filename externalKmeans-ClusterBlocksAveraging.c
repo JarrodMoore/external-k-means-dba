@@ -247,13 +247,13 @@ int main(int argc, char* argv[]){
       //   break;
       // }
     }while(centerDiff(centers1, centers2, .0001, k, colAmt));
-  // printf("---CENTERS---\n");
-  // for(j=0;j<k; ++j){
-  //   // printf("%lu: ", j+1);
-  //   for(l=0; l<colAmt; ++l)
-  //     printf("%f ", centers2[j*colAmt + l]);
-  //   printf("\n");
-  //  }
+   printf("---CENTERS---\n");
+   for(j=0;j<k; ++j){
+      printf("%lu: ", j+1);
+     for(l=0; l<colAmt; ++l)
+       printf("%f ", centers2[j*colAmt + l]);
+     printf("\n");
+    }
   //printf("%d ", initReadCount);
   printf("%d\n", bufferFillCount);
 
